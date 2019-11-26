@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename="css/bootstrap.min.css") }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename="css/all.css") }}">
+    <title>KIDS in SPACE</title>
+</head>
+
+<body>
+
+<!-- MasterBlock-->    
+<div class="bgSpace">
+
+    <!-- Header-->
+    <header class="container-fluid p-0">
+            <nav class="navbar p-0 bgnav">
+                <span class="navbar tamRocket1 m-3"><img src="{{ url_for('static', filename="img/logo.png") }}" class="card-img" alt="..."></span>
+                <div class="row allCenter mr-3">
+                    <div class="BlkBg"><a class="nav-link BlkBg wow m-3"  href="#next-launches">Next ships</a></div>
+                    <div class="BlkBg"><a class="nav-link BlkBg wow m-3" href="#last-launches">Last ships</a></div>
+                </div>
+            </nav>
+    </header>
+    <!-- /Header-->
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Block1-->
+    <div class="container">
+        <div class="row m-5">
+            <div class="col jaque" name="titleWeb">
+                <h1 class="titu1">Wecome to Space</h1>
+                <h2 class="titu2 m-4">Spy the launch of SpaceX super smart rockets!</h2>
+                <a class="btn btn-primary" href="#run" role="button">fasten your seat belts</a>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="row m-5 all-Center">
+
+            <div class="col-5 allCenter" name="nextLaunc">
+                    <div class="card boxQuadr allCenter" id="run" style="width: 22rem;">
+                        <div class="tamRocket2 zoom mt-4 ml-4 mr-4"><img src="{{ url_for('static', filename="img/rocket1.svg") }}" class="card-img" alt="..."></div>
+                        <div class="card-body"> 
+                            <h5 class="card-title h3 jaque">Next Launch</h5>
+                            <div>Launch nº: <span class="ml-2" id="NexLanch"></span></div>
+                            <div>Mission: <span class="ml-2" id="NexMission"></span></div>
+                            <div>Rocket: <span class="ml-2" id="NexRockt"></span></div>
+                            <div>Launch Year: <span class="ml-2" id="NexYear"></span></div>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="col-5 allCenter" name="lastLaunc">
+                    <div class="card boxQuadr allCenter" style="width: 22rem;">
+                        <div class="tamRocket2 zoom mt-4 ml-4 mr-4"><img src="{{ url_for('static', filename="img/rocket2.svg") }}" class="card-img" alt="..."></div>
+                        <div class="card-body">
+                            <h5 class="card-title h3 jaque">Latest Launch</h5>
+                            <div>Launch nº: <span class="ml-2" id="LastLanch"></span></div>
+                            <div>Mission: <span class="ml-2" id="LastMission"></span></div>
+                            <div>Rocket: <span class="ml-2" id="LastRockt"></span></div>
+                            <div>Launch Year: <span class="ml-2" id="LastYear"></span></div>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- /Block1-->
+
+    <br>
+    <br>
+
+    <!-- Block2-->
+    <div class="container">
+
+        <!-- Row NextLanc -->
+        <div class="row m-5 all-Center">
+
+                <div class="card boxQuadr" id="next-launches">
+                        <div class="allCenter mt-2">
+                            <div class="tamRocket4 m-3">
+                                <img src="{{ url_for('static', filename="img/rocket1.svg") }}" class="card-img" alt="...">
+                            </div>
+                            <h5 class="card-title h3 m-3 jaque">Next Launches</h5>
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-borderless">
+                                <thead>
+                                    <tr class="jaque">
+                                        <!-- <th scope="col">#</th> -->
+                                        <th scope="col">Launch</th>
+                                        <th scope="col">Mission</th>
+                                        <th scope="col">Rocket</th>
+                                        <th scope="col">Launch Year</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="showTabNext">
+                    
+                                </tbody>
+                            </table>
+                    </div>
+                </div>
+
+        </div>
+        <!-- /Row ProxLanc -->
+
+        <br>
+
+        <!-- Row UltLanc -->
+        <div class="row m-4 all-Center">
+
+                <div class="card boxQuadr" id="last-launches">
+                        <div class="allCenter mt-2">
+                            <div class="tamRocket4 m-3">
+                                <img src="{{ url_for('static', filename="img/rocket2.svg") }}" class="card-img" alt="...">
+                            </div>
+                            <h5 class="card-title h3 m-3 jaque">Latests Launches</h5>
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-borderless">
+                                <thead>
+                                    <tr class="jaque">
+                                        <!-- <th scope="col">#</th> -->
+                                        <th scope="col">Launch</th>
+                                        <th scope="col">Mission</th>
+                                        <th scope="col">Rocket</th>
+                                        <th scope="col">Launch Year</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="showTabLast">
+                    
+                                </tbody>
+                            </table>
+                    </div>
+                </div>
+
+        </div>
+        <!-- /Row UltLanc -->
+
+        <br>
+        <br>
+
+        <div class="row all-Center">
+            <div class="tamRocket3 mt-5 mb-5">
+                <img src="{{ url_for('static', filename="img/bg-footer.png") }}" class="card-img" alt="...">
+            </div>
+        </div>
+
+    </div>
+    <!-- /Block2-->
+
+    <!-- Footer-->
+    <footer>
+        <div class="container-fluid p-2">
+        
+            <div class="row all-Center">
+                <div class="tamRocket1">
+                    <img src="{{ url_for('static', filename="img/logo.png") }}" class="card-img" alt="...">
+                </div>
+            </div>
+
+            <div class="row all-Center ">
+                <p class="text10 wow">© 2019 The KIDSinSPACE Company, all rights reserved</p>
+            </div>
+    </footer>
+    <!-- /Footer-->
+
+</div>
+<!-- /MasterBlock-->
+
+<template id="tabLanc">
+    <tr class="jaque">
+        <!-- <td></td> -->
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</template>
+
+
+    <script src="{{ url_for('static', filename="js/jquery-3.4.1.min.js") }}"></script>
+    <script src="{{ url_for('static', filename="js/popper.min.js") }}"></script>
+    <script src="{{ url_for('static', filename="js/bootstrap.min.js") }}"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="{{ url_for('static', filename="js/routes.js") }}"></script>
+</body>
+
+</html>

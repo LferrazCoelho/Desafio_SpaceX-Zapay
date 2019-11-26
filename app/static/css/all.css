@@ -1,0 +1,146 @@
+.bgSpace{
+    background-color: #000000;
+    background-image: url("../img/bgall.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.a100{
+    width: 100vw;
+    height: 100vh;
+}
+
+.titu1{
+    color: #ffffff;
+    font-size: 82px;
+    font-family: Helvetica;
+}
+
+.titu2{
+    color: #ffffff;
+    font-size: 38px;
+    font-family: Helvetica;
+}
+
+.titu3{
+    color: #ffffff;
+    font-size: 22px;
+    font-family: Helvetica;
+}
+
+.boxQuadr{
+    border-radius: 14px;
+}
+
+
+.boxCard{
+    border-radius: 0px 0px 14px 14px;
+}
+
+
+.boxHorz{
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: #ffffff;
+    opacity: 1.0;
+}
+
+.text10{
+    font-size: 10px;
+}
+
+.tamRocket0{
+    width: 10%;
+    height: auto;
+}
+
+.tamRocket1{
+    width: 15%;
+    height: auto;
+}
+
+.tamRocket2{
+    width: 50%;
+    height: auto;
+}
+
+.tamRocket3{
+    width: 40%;
+    height: auto;
+}
+
+.tamRocket4{
+    width: 20%;
+    height: auto;
+}
+
+.jaque{
+    text-align: center;
+}
+
+.wow{
+    color: #ffffff;
+}
+
+.BlkBg:hover{
+    background: #0c50c7;
+    color: #ffffff;
+}
+
+.whLink:hover{
+    color: #9d9d9d;
+}
+
+.assWeb{
+    text-align: center;
+    font-size: 10px;
+    color: #4f4f4f;
+}
+
+.bg1{
+    background-color: #4f4f4f;
+}
+
+.bg2{
+    background-color: #c1c1c1;
+}
+
+.bgnav{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.bg4{
+    background-color: rgba(0, 0, 0);
+}
+
+.colorA9{
+    color: #A9A9A9;
+}
+
+.colorc1{
+    color: #c1c1c1;
+}
+
+.allCenter{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.allLeft{
+    display:flex;
+    justify-content:left;
+    align-items:center;
+}
+
+.allRight{
+    display:flex;
+    justify-content:right;
+    align-items:center;
+}
+
+.all-Center{
+    justify-content:center;
+    align-items:center;
+}

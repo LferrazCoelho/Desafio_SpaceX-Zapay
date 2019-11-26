@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename="css/bootstrap.min.css") }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename="css/all.css") }}">
+    <title>KIDS in SPACE</title>
+</head>
+
+<body>
+
+<!-- MasterBlock-->    
+<div class="bgSpace">
+
+    <!-- Header-->
+    <header class="container-fluid p-0">
+            <nav class="navbar p-0 bgnav">
+                <span class="navbar tamRocket1 m-3"><img src="{{ url_for('static', filename="img/logo.png") }}" class="card-img" alt="..."></span>
+                <div class="row allCenter mr-3">
+                    <div class="BlkBg"><a class="nav-link BlkBg wow m-3"  href="http://127.0.0.1:5000/">Home</a></div>
+                </div>
+            </nav>
+    </header>
+    <!-- /Header-->
+
+    <!-- Block1-->
+    <div class="container a100">
+
+        <!-- Row unic -->
+        <div class="row m-5 all-Center">
+            <div class="m-2">
+                <img src="{{ url_for('static', filename="img/404.png") }}" class="card-img" alt="...">
+            </div>
+        </div>
+        <!-- /Row unic -->
+
+    <!-- /Block1-->
+
+    <!-- Footer-->
+    <footer>
+        <div class="container-fluid p-2">
+        
+            <div class="row all-Center">
+                <div class="tamRocket1">
+                    <img src="{{ url_for('static', filename="img/logo.png") }}" class="card-img" alt="...">
+                </div>
+            </div>
+
+            <div class="row all-Center">
+                <p class="text10 wow">© 2019 The KIDSinSPACE Company, all rights reserved</p>
+            </div>
+    </footer>
+    <!-- /Footer-->
+
+</div>
+<!-- /MasterBlock-->
+
+<template id="tabLanc">
+    <tr class="jaque">
+        <!-- <td></td> -->
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</template>
+
+
+    <script src="{{ url_for('static', filename="js/jquery-3.4.1.min.js") }}"></script>
+    <script src="{{ url_for('static', filename="js/popper.min.js") }}"></script>
+    <script src="{{ url_for('static', filename="js/bootstrap.min.js") }}"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="{{ url_for('static', filename="js/routes.js") }}"></script>
+</body>
+
+</html>
